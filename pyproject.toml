@@ -1,7 +1,15 @@
 [project]
 name = "blog-ronnyascencio-com"
 version = "0.1.0"
-description = "Blog project for personal webpage made with reflex "
+description = "Blog webpage created with reflex"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.12"
 dependencies = ["reflex>=0.7.8"]
+
+[dependency-groups]
+dev = ["pylint>=3.3.6", "pyright>=1.1.400", "ruff>=0.11.7"]
+
+
+[tool.pyright]
+venvPath = "."
+venv = ".venv"
